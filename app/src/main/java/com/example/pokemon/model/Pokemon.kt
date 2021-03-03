@@ -4,37 +4,37 @@ package com.example.pokemon.model
 import com.google.gson.annotations.SerializedName
 
 data class Pokemon(
-    val abilities: List<String>,
-    val attack: Int,
+    val abilities: List<String>? = null,
+    val attack: Int = 0,
     @SerializedName("base_exp")
-    val baseExp: String,
-    val category: String,
-    val cycles: String,
-    val defense: Int,
+    val baseExp: String = "az",
+    val category: String = "az",
+    val cycles: String = "az",
+    val defense: Int = 0,
     @SerializedName("egg_groups")
-    val eggGroups: String,
-    val evolutions: List<String>,
-    val evolvedfrom: String,
+    val eggGroups: String = "az",
+    val evolutions: List<String>? = null,
+    val evolvedfrom: String = "az",
     @SerializedName("female_percentage")
-    val femalePercentage: String,
-    val genderless: Int,
-    val height: String,
-    val hp: Int,
-    val id: String,
+    val femalePercentage: String = "az",
+    val genderless: Int = 0,
+    val height: String = "az",
+    val hp: Int = 0,
+    val id: String = "az",
     val imageurl: String,
     @SerializedName("male_percentage")
-    val malePercentage: String,
+    val malePercentage: String = "az",
     val name: String,
-    val reason: String,
+    val reason: String = "az",
     @SerializedName("special_attack")
-    val specialAttack: Int,
+    val specialAttack: Int = 0,
     @SerializedName("special_defense")
-    val specialDefense: Int,
-    val speed: Int,
-    val total: Int,
-    val typeofpokemon: List<String>,
-    val weaknesses: List<String>,
-    val weight: String,
-    val xdescription: String,
-    val ydescription: String
+    val specialDefense: Int = 0,
+    val speed: Int = 0,
+    val total: Int = 0,
+    val typeofpokemon: List<String>? = null,
+    val weaknesses: List<String>? = null,
+    val weight: String = "az",
+    val xdescription: String = "az",
+    val ydescription: String = "az"
 )
