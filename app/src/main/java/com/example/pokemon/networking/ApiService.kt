@@ -15,8 +15,8 @@ interface ApiService {
     @POST("user")
     fun createPokemon(@Body pokemon: Pokemon)
 
-    //deletePokemon(
-    @GET("pokemon/{id}")
+    // deletePokemon(1, "tester") -> pokemon/1/tester
+    @GET("pokemon/{id}/{name}")
     fun deletePokemon(@Query("id") id: Int, @Query("name") name: String)
 
 }
